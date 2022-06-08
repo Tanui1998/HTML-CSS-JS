@@ -1,0 +1,49 @@
+body {
+    background-color: rgba(2, 0, 0, 0.5);
+    color: antiquewhite;
+    background-image: url("camera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 1000px; */
+    background-position: center center;
+}
+.blue {
+    background-color: azure;
+    color: blue;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+/* Selecting an id */
+h1#intro{
+    text-align: center;
+    text-decoration: underline;
+}
+strong, i {
+    color:cornsilk;
+}
+a {
+    color:black;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: coral;
+}
+a:visited{
+    color: greenyellow;
+}
+div.red-border{
+    border-width: 15px;
+    border-style: solid;
+    border-color:red;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 50%;
+    width: 200px;
+    height: 200px;
+    /* border: 5px dashed chartreuse;Alternative */
+
+}

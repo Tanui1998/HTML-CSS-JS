@@ -1,0 +1,89 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+    /* box-sizing: border-box; */
+    font-family: sans-serif;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.menu-bar {
+    background-color: rgb(7, 22, 48);
+    text-align:center;
+    position: sticky;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    position: sticky;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.class, .menu-bar ul li:hover{
+    background: rgb(7, 22, 48);
+    border-radius: 3px;
+}
+
+.menu-bar fa {
+    margin-right: 8px;
+}
+
+.da-sub-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .da-sub-menu {
+    display: block;
+    position: absolute;
+    background-color: rgba(7, 22, 48, 0.8);
+    /* background: 100px; */
+
+    margin-top: 10px;
+    margin-left: -10px;
+    z-index: -1;
+}
+
+.menu-bar ul li:hover .da-sub-menu ul{
+    display: block;
+    margin: 10px;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .da-sub-menu ul li{
+    width: 150px;
+    padding: 1px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .da-sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .da-sub-menu ul li a:hover{
+    color:midnightblue;
+}
+.menu-bar ul li:first-child{
+    text-align:left;
+}
